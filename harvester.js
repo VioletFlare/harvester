@@ -18,7 +18,12 @@ class Harvester {
 
         this.consoleConnector.get('/guilds', { source: "Bot::Bridge" }).then(response => {
             console.log('Bridge Guilds:')
-            console.log(response)
+            
+            response.data.guilds.forEach((guild) => {
+                console.log("--------------");
+                console.log("name: " + guild.name);
+                console.log("id: " + guild.id);
+            })
         });
     }
 }
