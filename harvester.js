@@ -23,6 +23,8 @@ class Harvester {
                 console.log("--------------");
                 console.log("name: " + guild.name);
                 console.log("id: " + guild.id);
+                console.log("channel name: " + guild.channel.name);
+                console.log("channel id: " + guild.channel.id);
             })
         });
     }
